@@ -12,18 +12,31 @@ class Splashscreen extends StatefulWidget {
   }
 }
 
-class Splashscreenstate extends State<Splashscreen> {
+class Splashscreenstate extends State<Splashscreen>
+    with TickerProviderStateMixin {
+  late AnimationController animationController;
+  late Animation animation;
   @override
   void initState() {
     // TODO: implement initState
 
     Future.delayed(
-      Duration(seconds: 3),
-      () => Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => Homescreen(),
-      )),
+      Duration(seconds: 6),
+      () => Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => Homescreen(),
+          )),
     );
     super.initState();
+    animationController =
+        AnimationController(vsync: this, duration: Duration(seconds: 4));
+    animation =
+        Tween<double>(begin: 100, end: 300).animate(animationController);
+    animationController.addStatusListener((status) {
+      setState(() {});
+    });
+    animationController.forward();
   }
 
   @override
@@ -45,18 +58,15 @@ class Splashscreenstate extends State<Splashscreen> {
                     repeat: ImageRepeat.noRepeat,
                   ),
                 ),
-                Positioned(
-                  top: 300,
-                  left: 100,
+                Padding(
+                  padding: const EdgeInsets.only(top: 300),
                   child: Center(
-                    child: Container(
-                      height: 150,
-                      width: 170,
-                      child: Image.asset(
-                        'Assates/Images/finalbcimg.png',
-                        fit: BoxFit.fill,
-                        repeat: ImageRepeat.noRepeat,
-                      ),
+                    child: Image.asset(
+                      'Assates/Images/finalbcimg.png',
+                      fit: BoxFit.fill,
+                      height: animation.value,
+                      width: animation.value,
+                      repeat: ImageRepeat.noRepeat,
                     ),
                   ),
                 ),
