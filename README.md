@@ -19,6 +19,10 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
+https://github.com/Rutvabhatt19/Bhagavad-geeta/assets/118719070/de681702-6ad4-436f-b094-049a34fc1764
 
-https://github.com/Rutvabhatt19/Bhagavad-geeta/assets/118719070/9cec9bf6-30df-4eec-96b5-29200416daa4
+
+
+
+
 
