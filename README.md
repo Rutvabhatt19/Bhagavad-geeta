@@ -62,26 +62,11 @@ A new Flutter project.
 
 <hr>
 
-
+<h2>🎬 Demo</h2>
+<p>Check out the app in action:</p> 
 
 
 
 https://github.com/Rutvabhatt19/Bhagavad-geeta/assets/118719070/de681702-6ad4-436f-b094-049a34fc1764
 
-Chapter List:
 
-![WhatsApp Image 2024-09-27 at 14 51 22](https://github.com/user-attachments/assets/9d5a29f0-37c9-4b99-96d5-2a74cf8419b9)
-
-
-Chapter:
-
-![WhatsApp Image 2024-09-27 at 14 51 23](https://github.com/user-attachments/assets/b7c7e99a-fe00-4420-8a48-882a1132c2c7)
-
-Verses List:
-
-![WhatsApp Image 2024-09-27 at 14 51 23 (1)](https://github.com/user-attachments/assets/a31a62cc-8755-4c4a-b799-4e8fb8e9bb51)
-
-Setting Screen
-
-
-![WhatsApp Image 2024-09-27 at 14 51 24](https://github.com/user-attachments/assets/d57973fd-64d3-4444-912b-f41800b6dd7a)
